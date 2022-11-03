@@ -1,0 +1,15 @@
+<section>
+    <div>
+        <ul>
+            {{#each Posts as Post}}
+                    <li>
+                        <header>
+                            <h2>{{Post.title}}</h2>
+                            <h3>Posted by {{User.name}} on {{Post.date}}</h3>
+                        </header>
+                        <p>{{Post.content}}</p>
+                    </li>
+                {{/each}}
+        </ul>
+    </div>
+</section>
